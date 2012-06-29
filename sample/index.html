@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>resizeImg</title>
+		
+		
+		<!-- javascript files -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/jquery.resizeImg.js"></script>
+		
+		<meta name="author" content="akira miki" />
+		<meta name="viewport" content="height=device-height*0.8; width=device-width; user-scalable=no; initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="" />
+		<link rel="apple-touch-icon" href="" />
+		
+		 <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+
+	</head>
+	<body>
+		
+		<h1>resizeImg</h1>
+		
+		<h2 style="padding-top:50px;">resizeImg  : square image to fix at square box </h2>
+		<h3>nothing to use</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample.jpg" />
+		</p>
+		
+		<h3 style="padding-top:150px;">use resizeImg</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample.jpg" class="test1" />
+		</p>
+		<script>
+			$(function() {
+				$("img.test1").resizeImg();
+			});
+		</script>
+		
+		
+		
+		<h2 style="padding-top:50px;">resizeImg : rec image(width) to fix at square box </h2>
+		<h3>nothing to use</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample_rec.jpg" />
+		</p>
+		
+		<h3 style="padding-top:50px;">use resizeImg</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample_rec.jpg" class="test2" />
+		</p>
+		<script>
+			$(function() {
+				$("img.test2").resizeImg();
+			});
+		</script>
+		
+		
+		<h2 style="padding-top:50px;">resizeImg : rec image(heigh) to fix at square box </h2>
+		<h3>nothing to use</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample_rec2.jpg" />
+		</p>
+		
+		<h3 style="padding-top:100px;">use resizeImg</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample_rec2.jpg" class="test3" />
+		</p>
+		<script>
+			$(function() {
+				$("img.test3").resizeImg();
+			});
+		</script>
+		
+		<h2 style="padding-top:50px;">resizeImg : small image to fix at square box </h2>
+		<h3>nothing to use</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample_small.jpg" />
+		</p>
+		
+		<h3 style="padding-top:50px;">use resizeImg</h3>
+		<p style="width:100px;height:100px;border: 5px solid gray;">
+			<img src="assets/images/sample_small.jpg" class="test4" />
+		</p>
+		<script>
+			$(function() {
+				$("img.test4").resizeImg();
+			});
+		</script>
+		
+	</body>
+</html>
